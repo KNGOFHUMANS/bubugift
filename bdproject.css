@@ -1,0 +1,92 @@
+
+.login-body {
+    background: linear-gradient(to top left, #eeccd3, #db9fbd);
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* login box*/
+
+.login-container {
+    background: rgb(224, 181, 219);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgb(156, 41, 41);
+    text-align: center;
+    max-width: 350px;
+    width: 90%;
+    z-index: 2;
+    position: relative;
+}
+.login-container h2{
+    color: #ff69b4;
+    margin-bottom: 10px;
+}
+.login-container p {
+    color: #668;
+    margin: 10px 0;
+}
+.login-container input {
+    display: block;
+    width: 95%;
+    padding: 11px;
+    margin: 9px 0;
+    border: 4px solid #ffc0cb;
+    border-radius: 10px;
+    font-size: 16px;
+    text-align: center;
+}
+.login-container button {
+    margin-top: 10px;
+    padding: 12px 20px;
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+}
+.login-container button:hover {
+    background-color: #ff1493;
+}
+#error-msg {
+    color: red;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.welcome-flex {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+.welcome-gif {
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+}
+
+
+/* ===== FLOATING HEARTS ===== */
+.heart {
+  position: absolute;
+  color: #ff69b4;
+  font-size: 1.5rem;
+  opacity: 0;
+  pointer-events: none;
+  animation: floatUp 2s ease-out forwards;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-200px) scale(1.5);
+    opacity: 0;
+  }
+}
